@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone of todolist</title>
+    <link rel="stylesheet" href="my.css">
+</head>
+
+<body>
+    <section class="todowebsite">
+
+        <header class="header">
+            <span> <h1>todos</h1></span>
+            <span> <input  id="taskInput" class="new-todo" onkeydown="if (event.key === 'Enter') addTask()"placeholder="What needs to be done?"></span>
+
+        </header>
+        <section class="main">
+            <input id="item" class="item" type="checkbox">
+            <label for="all_elements">
+            </label>
+        </section>
+
+
+        <footer class="footer">
+            <span class="todo-count"></span>
+            <div class="mom">
+                <ul class="updates">
+                    <div class="child">
+                        <li>
+                            <a href="all" id="all" class="childinner">All</a>
+                        </li>
+                        <div class="child">
+                            <li>
+                                <a href="active" class="childinner">Active</a>
+                            </li>
+                        </div>
+                        <div class="child">
+                            <li>
+                                <a href="completed" class="childinner">Completed</a>
+                            </li>
+                        </div>
+                        <!-- <div class="child">
+                        <button class="childinner">Clear completed</button>
+                    </div> -->
+
+
+
+
+                </ul>
+                </div>
+
+        </footer>
+    </section>
+    <footer class="info">
+        <p>Double-click to edit a todo</p>
+        <p>Created by <a>Yogita Bhagtani</a></p>
+
+    </footer>
+
+    <script src="my.js"></script>
+</body>
+
+</html>
